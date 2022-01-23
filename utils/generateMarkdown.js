@@ -1,5 +1,18 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
+
+let licenses = {
+  MIT: "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+  GPLv2: "![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)",
+  Apache: "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+  GPLv3: "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/gpl-3.0)"
+}
+
 // If there is no license, return an empty string
+
+// function renderLicenseBadge(license) {
+//   return Licenses[license]
+// }
+
 const generateList = commalist => {
   listarray = commalist.split(",")
   listarray = listarray.map(listitem => "* " + listitem)
@@ -59,9 +72,9 @@ function renderLicenseSection(licenseArr) {
 function generateMarkdown(data) {
 
   return `
-[![License: MIT](https://img.shields.io/badge/License-${data.License}-yellow.svg](https://opensource.org/licenses/MIT))]
 
-# ${data.title}
+
+# ${data.title} ${renderLicenseBadge(data.license)}
 https://github.com/${data.github}/${data.title}
 
 ## Description
@@ -73,9 +86,9 @@ ${data.description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
+* [Contribution](#contribution)
 * [Tests](#test)
-* [Questions](#questions)
+
 
 ${renderLicenseLink(data.license)}
 
@@ -86,18 +99,13 @@ ${data.installation}
 ${data.usage}
 
 ## Licenses
-
 ${generateObjectLicense(data.license)}
 
 ## Contributing
-
-${generateList(data.contributing)}
+${generateList(data.contribution)}
 
 ## Tests
-
 ${data.test}
-
-## Questions
 
 Contact Information for questions: \n
 

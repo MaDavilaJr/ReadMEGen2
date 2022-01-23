@@ -1,21 +1,21 @@
 
-[![License: MIT](https://img.shields.io/badge/License-undefined-yellow.svg](https://opensource.org/licenses/MIT))]
 
-# ReadMeGen
-https://github.com/MaDavilaJr/ReadMeGen
+
+# ReadMeGen ![License](https://img.shields.io/static/v1?label=License&message=MIT&color=BLUE)
+https://github.com/A/ReadMeGen
 
 ## Description
 
-It creates readmes
+It's a generator to create functional and usable rreadmes
 
 ## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
+* [Contribution](#contribution)
 * [Tests](#test)
-* [Questions](#questions)
+
 
 * [License](#license)
 
@@ -23,27 +23,27 @@ It creates readmes
 npm i
 
 ## Usage
-It'll work
+It'll allow you create functional and usable readmes.
 
 ## Licenses
 
-* APACHE-2.0
+* MIT
 
 ## Contributing
 
-* It'll break if you touch it too much
+* It'll give them a
 
 ## Tests
 
-Node index.js
+node index.js
 
 ## Questions
 
 Contact Information for questions: 
 
 
-GitHub: [#{username}](https:www.github.com/MaDavilaJr) 
+GitHub: [#{username}](https:www.github.com/A) 
 
-Email: migueldavilajr@gmail.com
+Email: A
 
 
