@@ -15,14 +15,14 @@ const generateBadges = badgeArr => {
   return badgeArr.join(" ")
 }
 
-// const renderLicenseBadge = licenseArr => {
-//   licenseArr = licenseArr.map(badge => {
-//     if(badge !== 'NONE') {
-//       return `![License](https://img.shields.io/static/v1?label=License&message=${badge}&color=BLUE)`;
-//     }
-//   })
-//   return licenseArr.join(' ');
-// }
+const renderLicenseBadge = licenseArr => {
+  licenseArr = licenseArr.map(badge => {
+    if(badge !== 'NONE') {
+      return `![License](https://img.shields.io/static/v1?label=License&message=${badge}&color=BLUE)`;
+    }
+  })
+  return licenseArr.join(' ');
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -42,26 +42,27 @@ const generateObjectLicense = objectLicense => {
 }
 
 // If there is no license, return an empty string
-// function renderLicenseSection(licenseArr) {
-//   if(licenseArr !== 'NONE') {
-//     return `## License
-//   This project is licensed under the
-//    ${licenseArr.map(licenseItem => {
-//     `* ${licenseItem}`
-//   })}}`
-//   }
-//   return '';
+function renderLicenseSection(licenseArr) {
+  if(licenseArr !== 'NONE') {
+    return `## License
+  This project is licensed under the
+   ${licenseArr.map(licenseItem => {
+    `* ${licenseItem}`
+  })}}`
+  }
+  return '';
 
-// }
+}
 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
   return `
-
+[![License: MIT](https://img.shields.io/badge/License-${data.License}-yellow.svg](https://opensource.org/licenses/MIT))]
 
 # ${data.title}
+https://github.com/${data.github}/${data.title}
 
 ## Description
 
@@ -71,9 +72,9 @@ ${data.description}
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [License](#licenses)
+* [License](#license)
 * [Contributing](#contributing)
-* [Tests](#tests)
+* [Tests](#test)
 * [Questions](#questions)
 
 ${renderLicenseLink(data.license)}
