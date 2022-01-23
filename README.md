@@ -23,7 +23,7 @@ It's a generator to create functional and usable rreadmes
 npm i
 
 ## Usage
-It'll allow you create functional and usable readmes.
+Download the application and run the installation process. In the command line run 'node index.js' and answer all the provided questions. Once all the prompts have been answered the readme will be generated inside of the directory. 
 
 ## Licenses
 
@@ -31,7 +31,7 @@ It'll allow you create functional and usable readmes.
 
 ## Contributing
 
-* It'll give them a
+* Miguel Davila Jr
 
 ## Tests
 
@@ -42,8 +42,14 @@ node index.js
 Contact Information for questions: 
 
 
-GitHub: [#{username}](https:www.github.com/A) 
+GitHub: [#{username}](https:www.github.com/MaDavilaJr) 
 
-Email: A
+Email: migueldavilajr@gmail.com
+
+## Tutorial Video
+https://watch.screencastify.com/v/3xSFRrr1M1WwBGJpGseD
+
+## Screenshots
+![image](https://user-images.githubusercontent.com/93358568/150702455-6ecfa329-26e4-4b56-8bd0-30dd660fe1c6.png)
 
 
