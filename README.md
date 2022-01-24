@@ -42,7 +42,7 @@ node index.js
 Contact Information for questions: 
 
 
-GitHub: [#{username}](https:www.github.com/MaDavilaJr) 
+GitHub: (https:www.github.com/MaDavilaJr) 
 
 Email: migueldavilajr@gmail.com
 
